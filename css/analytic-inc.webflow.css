@@ -833,11 +833,11 @@
   margin-top: 40px;
   margin-right: 50px;
   margin-bottom: 40px;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1249,6 +1249,39 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.textarea {
+  padding-right: 20px;
+  padding-left: 20px;
+  opacity: 0.8;
+  font-family: Poppins, sans-serif;
+}
+
+.textarea.msg {
+  min-height: 150px;
+}
+
+.success-message {
+  background-image: -webkit-linear-gradient(270deg, #2d6cdb, #2d6cdb);
+  background-image: linear-gradient(180deg, #2d6cdb, #2d6cdb);
+  font-family: Poppins, sans-serif;
+  color: #fff;
+}
+
+.error-message {
+  margin-top: 30px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  background-image: -webkit-linear-gradient(270deg, #ff4a4a, #ff4a4a);
+  background-image: linear-gradient(180deg, #ff4a4a, #ff4a4a);
+  font-family: Poppins, sans-serif;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -1732,6 +1765,9 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
   }
+  .text-field {
+    font-size: 12px;
+  }
   .div-block-7 {
     margin-bottom: 20px;
     -webkit-box-orient: vertical;
@@ -1804,8 +1840,8 @@
     font-size: 22px;
   }
   .footer-wrapper {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
@@ -1813,6 +1849,11 @@
   }
   .columns {
     overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-flex: 0;
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
@@ -1821,6 +1862,7 @@
   .heading-2 {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 24px;
   }
   .column {
     padding-top: 0px;
@@ -1831,8 +1873,12 @@
     flex: 0 auto;
   }
   .column-2 {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .text-block-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .block-quote {
     width: 80vw;
@@ -1856,6 +1902,10 @@
   }
   .unordered-list._1 {
     padding-left: 20px;
+  }
+  .textarea.msg {
+    min-height: 170px;
+    font-size: 12px;
   }
 }
 
